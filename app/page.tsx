@@ -1,3 +1,8 @@
+
+import AboutSection from "@/components/sections/core/AboutSection"
+import BlogSection from "@/components/sections/core/BlogSection"
+import TechnologySection from "@/components/sections/core/TechnologySection"
+import VehiclesSection from "@/components/sections/core/VehiclesSection"
 import React from "react"
 
 
@@ -6,11 +11,10 @@ export default function HomePage() {
     <main >
       
     
-      <section className="flex items-center justify-center min-h-screen">
-        <h1 className="text-5xl font-bold">
-          Welcome to Gantabya EV
-        </h1>
-      </section>
+      <VehiclesSection />
+      <TechnologySection />
+      <AboutSection />
+      <BlogSection />
 
     </main>
   )
