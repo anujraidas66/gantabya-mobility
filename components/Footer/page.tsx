@@ -10,7 +10,7 @@ export default function Footer() {
                 Gantabya Mobility
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-                Leading Nepal's EV revolution since 2019. Premium electric motorcycles for the future of mobility.
+                Leading Nepal EV revolution since 2019. Premium electric motorcycles for the future of mobility.
             </p>
             </div>
 

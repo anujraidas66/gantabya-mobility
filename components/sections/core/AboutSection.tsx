@@ -1,151 +1,3 @@
-// 'use client'
-
-// import { motion, useInView } from 'framer-motion'
-// import { useRef } from 'react'
-// import { Mountain, Leaf, Award, Users } from 'lucide-react'
-
-// const PILLARS = [
-//   {
-//     icon: Mountain,
-//     title: 'Born in Nepal',
-//     description:
-//       'Designed and tested on Nepal mountain roads from low to high altitude.',
-//   },
-//   {
-//     icon: Leaf,
-//     title: 'Carbon Responsible',
-//     description:
-//       'We focus on sustainable manufacturing and eco-friendly mobility.',
-//   },
-//   {
-//     icon: Award,
-//     title: 'Award-Winning',
-//     description:
-//       'Recognized for innovation in EV design and engineering excellence.',
-//   },
-//   {
-//     icon: Users,
-//     title: 'Growing Community',
-//     description:
-//       'Thousands of drivers choosing clean and smart transportation.',
-//   },
-// ]
-
-// const MILESTONES = [
-//   { year: '2019', event: 'Founded in Kathmandu with EV vision' },
-//   { year: '2020', event: 'First prototype tested in Nepal terrain' },
-//   { year: '2021', event: 'Funding secured and development scaled' },
-//   { year: '2022', event: 'First EV model launched' },
-//   { year: '2023', event: 'Charging network expansion across cities' },
-//   { year: '2024', event: 'Mass adoption and regional expansion' },
-// ]
-
-// export default function AboutSection() {
-//   const ref = useRef(null)
-//   const timelineRef = useRef(null)
-
-//   const isVisible = useInView(ref, { once: true })
-//   const timelineVisible = useInView(timelineRef, { once: true })
-
-//   return (
-//     <section className="py-24 bg-[#0d0d0d] text-white">
-//       <div className="max-w-6xl mx-auto px-6">
-
-//         {/* HEADER */}
-//         <motion.div
-//           ref={ref}
-//           initial={{ opacity: 0, y: 30 }}
-//           animate={isVisible ? { opacity: 1, y: 0 } : {}}
-//           transition={{ duration: 0.6 }}
-//           className="max-w-3xl mb-16"
-//         >
-//           <p className="text-green-500 text-sm mb-3">Our Story</p>
-
-//           <h2 className="text-4xl font-bold mb-4">
-//             Building the <span className="text-green-500">electric future</span>
-//           </h2>
-
-//           <p className="text-gray-400">
-//             Gantabya is focused on building EV solutions designed for Nepal’s
-//             roads, climate, and people.
-//           </p>
-//         </motion.div>
-
-//         {/* PILLARS */}
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-20">
-//           {PILLARS.map((pillar, i) => {
-//             const Icon = pillar.icon
-
-//             return (
-//               <motion.div
-//                 key={pillar.title}
-//                 initial={{ opacity: 0, y: 20 }}
-//                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
-//                 transition={{ delay: i * 0.08 }}
-//                 className="p-5 rounded-xl border border-gray-800 bg-[#141414]"
-//               >
-//                 <Icon className="w-5 h-5 text-green-500 mb-3" />
-
-//                 <h3 className="font-semibold mb-2">{pillar.title}</h3>
-
-//                 <p className="text-gray-400 text-sm">
-//                   {pillar.description}
-//                 </p>
-//               </motion.div>
-//             )
-//           })}
-//         </div>
-
-//         {/* TIMELINE */}
-//         <motion.h3
-//           ref={timelineRef}
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={timelineVisible ? { opacity: 1, y: 0 } : {}}
-//           className="text-2xl font-bold mb-10"
-//         >
-//           Our Journey
-//         </motion.h3>
-
-//         <div className="relative border-l border-gray-800 pl-6 space-y-8">
-//           {MILESTONES.map((m, i) => (
-//             <motion.div
-//               key={m.year}
-//               initial={{ opacity: 0, x: -20 }}
-//               animate={timelineVisible ? { opacity: 1, x: 0 } : {}}
-//               transition={{ delay: i * 0.1 }}
-//             >
-//               <div className="text-green-500 font-mono text-sm mb-1">
-//                 {m.year}
-//               </div>
-//               <p className="text-gray-300">{m.event}</p>
-//             </motion.div>
-//           ))}
-//         </div>
-
-//       </div>
-//     </section>
-//   )
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 'use client'
 
@@ -196,7 +48,7 @@ const AboutSection: React.FC = () => {
         >
           Founded in 2019, Gantabya Mobility set out with a bold vision — to lead Nepal's
           electric vehicle revolution. From a small workshop in Kathmandu, we've grown into
-          one of Nepal's most promising EV startups.
+          one of Nepal most promising EV startups.
         </p>
 
         <p
@@ -207,7 +59,7 @@ const AboutSection: React.FC = () => {
             marginBottom: "64px",
           }}
         >
-          Our name "Gantabya" means "destination" in Nepali — a symbol of our mission to build
+          Our name Gantabya" means "destination" in Nepali — a symbol of our mission to build
           a sustainable, emission-free future.
         </p>
 

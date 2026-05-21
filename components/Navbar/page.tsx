@@ -17,7 +17,7 @@ function NavItem({ href, children }: { href: string; children: React.ReactNode }
   );
 }
 
-export default function Page() {
+export default function Navbar() {
   return (
     <div className="bg-[#111111] text-white">
       <nav className="flex items-center justify-between px-10 py-6">
@@ -31,8 +31,8 @@ export default function Page() {
           <NavItem href="/">Home</NavItem>
           <NavItem href="/our-bikes">Our Bikes</NavItem>
           <NavItem href="/technology">Technology</NavItem>
-          <NavItem href="/about-us">About Us</NavItem>
-          <NavItem href="/blog">Blog</NavItem>
+          <NavItem href="/components/sections/core/AboutSection.tsx">About Us</NavItem>
+          <NavItem href="/BlogSection">Blog</NavItem>
           <NavItem href="/support">Support</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </div>
