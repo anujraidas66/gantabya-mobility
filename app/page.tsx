@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <main >
       
-    
+      
       <VehiclesSection />
       <TechnologySection />
       <AboutSection />
