@@ -3,6 +3,7 @@ import BlogSection from "@/components/sections/core/BlogSection"
 import TechnologySection from "@/components/sections/core/TechnologySection"
 import VehiclesSection from "@/components/sections/core/VehiclesSection"
 
+
 export default function HomePage() {
   return (
     <main >
@@ -12,6 +13,8 @@ export default function HomePage() {
       <TechnologySection />
       <AboutSection />
       <BlogSection />
+
+
 
 
 
