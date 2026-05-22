@@ -196,12 +196,6 @@ export default function Support() {
 
 
         
-
-
-
-        
-
-        
        
 
 
