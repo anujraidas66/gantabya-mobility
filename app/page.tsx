@@ -1,19 +1,23 @@
-import AboutSection from "@/app/about-us/page"
-import BlogSection from "@/app/blog/page"
-import TechnologySection from "@/app/technology/page"
+
+
+
 import VehiclesSection from "@/app/bikes/page"
 import HeroSection from "./heroSection/page"
+import WhyChooseSection from "./whyChooseUs/page"
+import ReadyToRide from "./readyToRide/page"
 
 
 export default function HomePage() {
   return (
     <main >
       
-    
+    <HeroSection />
+    <WhyChooseSection />
       <VehiclesSection />
-      <TechnologySection />
-      <AboutSection />
-      <BlogSection />
+      <ReadyToRide />
+     
+      
+   
 
     </main>
   )
