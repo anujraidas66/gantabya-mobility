@@ -9,15 +9,11 @@ export default function HomePage() {
   return (
     <main >
       
-      <HeroSection />
+    
       <VehiclesSection />
       <TechnologySection />
       <AboutSection />
       <BlogSection />
-
-
-
-
 
     </main>
   )
