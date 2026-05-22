@@ -7,7 +7,7 @@ import VehiclesSection from "@/components/sections/core/VehiclesSection"
 export default function HomePage() {
   return (
     <main >
-      
+   
       <VehiclesSection />
       <TechnologySection />
       <AboutSection />
