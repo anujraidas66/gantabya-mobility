@@ -132,7 +132,7 @@ export default function VehiclesSection() {
           className="text-center mb-14"
         >
           <h2 className="text-white text-4xl font-bold">
-            Featured <span className="text-green-500">Vehicles</span>
+            Featured <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Vehicles</span>
           </h2>
         </motion.div>
 

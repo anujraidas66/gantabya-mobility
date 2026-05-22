@@ -26,13 +26,7 @@ const AboutSection: React.FC = () => {
           }}
         >
           About{" "}
-          <span
-            style={{
-              background: "linear-gradient(90deg, #22c55e, #16a34a)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
+          <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             Gantabya
           </span>
         </h2>

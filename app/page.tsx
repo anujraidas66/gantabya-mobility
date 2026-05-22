@@ -1,13 +1,15 @@
-import AboutSection from "@/components/sections/core/AboutSection"
-import BlogSection from "@/components/sections/core/BlogSection"
-import TechnologySection from "@/components/sections/core/TechnologySection"
-import VehiclesSection from "@/components/sections/core/VehiclesSection"
+import AboutSection from "@/app/about-us/page"
+import BlogSection from "@/app/blog/page"
+import TechnologySection from "@/app/technology/page"
+import VehiclesSection from "@/app/bikes/page"
+import HeroSection from "./heroSection/page"
 
 
 export default function HomePage() {
   return (
     <main >
-   
+      
+    
       <VehiclesSection />
       <TechnologySection />
       <AboutSection />
