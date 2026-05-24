@@ -143,13 +143,14 @@ export default function Navbar() {
           <NavItem href="/technology">Technology</NavItem>
           <NavItem href="/about-us">About Us</NavItem>
           <NavItem href="/blog">Blog</NavItem>
-          <NavItem href="/support">Support</NavItem>
+          <NavItem href="/Support">Support</NavItem>
           <NavItem href="/Contact">Contact</NavItem>
         </div>
 
-        <button className="bg-[#00d65c] text-black px-8 py-2.5 font-bold rounded-full hover:bg-[#00b34d] transition-colors">
-          Book Test Ride
-        </button>
+        
+        <button className="bg-[#00d65c] text-black px-8 py-2.5 font-bold rounded-full hover:bg-[#00b34d] transition-colors cursor-pointer">
+  Book Test Ride
+</button>
       </nav>
      </header>
     </div>
