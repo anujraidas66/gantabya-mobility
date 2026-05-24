@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Star, Zap } from "lucide-react";
 
 const riders = [
@@ -93,7 +94,7 @@ export default function ReadyToRide() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+          {/* <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <button className="bg-[#00E676] hover:bg-[#00c864] text-black font-semibold px-6 py-2.5 rounded-lg transition-all duration-300">
               Book Test Ride
             </button>
@@ -101,7 +102,24 @@ export default function ReadyToRide() {
             <button className="border border-green-500 text-green-400 hover:bg-gray-800 font-semibold px-6 py-2.5 rounded-lg transition-all duration-300">
               View All Bikes
             </button>
-          </div>
+          </div> */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+
+  <Link
+    href="/Testride"
+    className="bg-[#00E676] hover:bg-[#00c864] text-black font-semibold px-6 py-2.5 rounded-lg transition-all duration-300 text-center"
+  >
+    Book Test Ride
+  </Link>
+
+  <Link
+    href="/bikes"
+    className="border border-green-500 text-green-400 hover:bg-gray-800 font-semibold px-6 py-2.5 rounded-lg transition-all duration-300 text-center"
+  >
+    View All Bikes
+  </Link>
+
+</div>
         </div>
 
       </div>
