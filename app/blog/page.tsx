@@ -61,9 +61,9 @@ const BlogSection: React.FC = () => {
         {/* HEADER */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold mb-3">
-            Blog & <span className="text-green-500">News</span>
+            Blog &<span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">  News</span>
           </h2>
-          <div className="w-20 h-1 bg-green-500 mx-auto rounded-full"></div>
+          
         </div>
 
         {/* GRID */}
@@ -134,12 +134,12 @@ const BlogSection: React.FC = () => {
 
         {/* BUTTON */}
         <div className="text-center mt-12">
-          <button
+          {/* <button
             className="px-6 py-3 bg-green-500 text-black font-semibold rounded-lg
                        hover:bg-green-400 transition-all shadow-lg"
           >
             View All Articles
-          </button>
+          </button> */}
         </div>
 
       </div>
