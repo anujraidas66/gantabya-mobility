@@ -8,7 +8,8 @@ export default function HeroSection() {
       <section
         className="relative h-screen bg-cover bg-center"
         style={{
-          backgroundImage: "url('/image.png')",
+          backgroundImage:
+  "url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070&auto=format&fit=crop')",
         }}
       >
         {/* Dark Overlay */}

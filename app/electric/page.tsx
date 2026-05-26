@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { Zap, Clock, ChevronRight } from 'lucide-react'
 
@@ -42,6 +43,41 @@ const VEHICLES: Vehicle[] = [
     price: 'NPR 2,49,000',
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80',
   },
+
+   {
+    id: 'thunder-x',
+    name: 'Thunder X',
+    tagline: 'Born to dominate.',
+    range: '180km',
+    speed: '180km/hr',
+    price: 'NPR 4,50,000',
+    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXN8ZW58MHx8MHx8fDA%3D',
+  },
+  {
+    id: 'volt-cruiser',
+    name: 'Volt Cruiser',
+    tagline: 'Silent power, endless roads',
+    range: '200km',
+    speed: '120km/hr',
+    price: 'NPR 3,99,000',
+    image: 'https://images.unsplash.com/photo-1607091083645-31f4e28dc9af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWxlY3RyaWMlMjBtb3RvcmJpa2VzfGVufDB8fDB8fHww',
+  },
+  {
+    id: 'eco-ride',
+    name: 'Eco Ride',
+    tagline: 'Smart commute, zero emissions',
+    range: '120km',
+    speed: '80km/hr',
+    price: 'NPR 2,49,000',
+    image: 'https://images.unsplash.com/photo-1607088797610-020db7a14cd5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGVsZWN0cmljJTIwbW90b3JiaWtlc3xlbnwwfHwwfHx8MA%3D%3D',
+  },
+
+
+
+
+
+
+
 ]
 
 function VehicleCard({ vehicle, index }: { vehicle: Vehicle; index: number }) {
@@ -63,14 +99,19 @@ function VehicleCard({ vehicle, index }: { vehicle: Vehicle; index: number }) {
     >
       {/* Image */}
       <div className="relative h-65 overflow-hidden">
-       
+        {/* <Image
+          src={vehicle.image}
+          alt={vehicle.name}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+        /> */}
         <img
-  src={vehicle.image}
-  alt={vehicle.name}
-  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-/>
+            src={vehicle.image}
+            alt={vehicle.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
 
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-linjear-to-t from-[#1a1a1a] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-[#1a1a1a] to-transparent" />
       </div>
 
       {/* Content */}
@@ -110,12 +151,12 @@ function VehicleCard({ vehicle, index }: { vehicle: Vehicle; index: number }) {
   )
 }
 
-export default function VehiclesSection() {
+export default function Electric() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section id="vehicles" className="bg-[#0d0d0d] py-20 px-6">
+    <section id="electric" className="bg-[#0d0d0d] py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
@@ -126,8 +167,9 @@ export default function VehiclesSection() {
           className="text-center mb-14"
         >
           <h2 className="text-white text-4xl font-bold">
-            Featured <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Bikes</span>
+            Electric <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Motorcycles</span>
           </h2>
+          <p className='text-white text-2xl mt-4'>Choose the perfect ride for your journey-from city commutes to highway adventures</p>
         </motion.div>
 
         {/* Grid */}

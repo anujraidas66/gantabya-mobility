@@ -1,67 +1,4 @@
 
-
-// 'use client';
-
-// import Link from 'next/link';
-// import { usePathname } from 'next/navigation';
-
-// function NavItem({ href, children }: { href: string; children: React.ReactNode }) {
-//   const pathname = usePathname();
-//   const isActive = pathname === href;
-
-//   return (
-//     <Link 
-//       href={href} 
-//       className={`transition ${isActive ? 'text-green-500 font-medium' : 'text-gray-300 hover:text-white'}`}
-//     >
-//       {children}
-//     </Link>
-//   );
-// }
-
-// export default function Navbar() {
-//   return (
-    
-//     <div className="bg-[#111111] text-white">
-//       <header className="fixed top-0 left-0 w-full z-50 bg-[#111111]/90 backdrop-blur-md border-b border-gray-800">
-//        <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
-        
-        
-//         <div className="flex items-center gap-2">
-
-//           <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-black">G</div>
-//           <span className="text-xl font-bold">gantabya</span>
-//         </div>
-
-//         <div className="flex items-center gap-8">
-//           <NavItem href="/">Home</NavItem>
-//           <NavItem href="/bikes">Our Bikes</NavItem>
-//           <NavItem href="/technology">Technology</NavItem>
-//           <NavItem href="/about-us">About Us</NavItem>
-//           <NavItem href="/blog">Blog</NavItem>
-//           <NavItem href="/Support">Support</NavItem>
-//           <NavItem href="/Contact">Contact</NavItem>
-//         </div>
-
-        
-//         {/* <button className="bg-[#00d65c] text-black px-8 py-2.5 font-bold rounded-full hover:bg-[#00b34d] transition-colors cursor-pointer">
-//   Book Test Ride
-// </button> */}
-
-// <Link href="/Testride">
-//   <button className="bg-[#00d65c] text-black px-8 py-2.5 font-bold rounded-full hover:bg-[#00b34d] transition-colors cursor-pointer">
-//     Book Test Ride
-//   </button>
-// </Link>
-//       </nav>
-//      </header>
-//     </div>
-//   );
-// }
-
-
-
-
 'use client';
 
 import Link from 'next/link';
@@ -121,8 +58,8 @@ export default function Navbar() {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/bikes', label: 'Our Bikes' },
-    { href: '/technology', label: 'Technology' },
+    { href: '/electric', label: 'Our Bikes' },
+    { href: '/Technology', label: 'Technology' },
     { href: '/about-us', label: 'About Us' },
     { href: '/blog', label: 'Blog' },
     { href: '/Support', label: 'Support' },
@@ -146,7 +83,7 @@ export default function Navbar() {
               <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-black transition-transform group-hover:scale-105">
                 G
               </div>
-              <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
+              <span className="text-white text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
                 gantabya
               </span>
             </Link>

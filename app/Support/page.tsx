@@ -80,21 +80,21 @@ export default function Support() {
         <div className="grid md:grid-cols-3 gap-6 w-full justify-items-center">
          
           <div className="border border-zinc-700 w-full max-w-sm h-52 py-6 rounded-xl flex flex-col items-center justify-center text-center px-8 hover:border-green-500/40 hover:shadow-[0_0_30px_rgba(34,197,94,0.30)] transition-all duration-300 group">
-            <FontAwesomeIcon icon={faLeaf} className="text-[#00d84f] text-2xl mb-3" />
+            <FontAwesomeIcon icon={faLeaf} className="text-[#00d84f] text-5xl mb-3" />
             <h2 className="text-white text-2xl font-normal mb-2">Warranty</h2>
             <p className="text-zinc-400 font-medium text-sm">3-year vehicle + 5-year battery warranty on all models.</p>
           </div>
 
           
           <div className="border border-zinc-700 w-full max-w-sm h-52 py-6 rounded-xl flex flex-col items-center justify-center text-center px-8 hover:border-green-500/40 hover:shadow-[0_0_30px_rgba(34,197,94,0.30)] transition-all duration-300 group">
-            <FontAwesomeIcon icon={faCircleNodes} className="text-[#00d84f] text-2xl mb-3" />
+            <FontAwesomeIcon icon={faCircleNodes} className="text-[#00d84f] text-5xl mb-3" />
             <h2 className="text-white text-2xl font-normal mb-2">Service Centers</h2>
             <p className="text-zinc-400 font-medium text-sm">25+ authorized centers across Nepal for hassle-free servicing.</p>
           </div>
 
          
           <div className="border border-zinc-700 w-full max-w-sm h-52 py-6 rounded-xl flex flex-col items-center justify-center text-center px-8 hover:border-green-500/40 hover:shadow-[0_0_30px_rgba(34,197,94,0.30)] transition-all duration-300 group">
-            <FontAwesomeIcon icon={faUsers} className="text-[#00d84f] text-2xl mb-3" />
+            <FontAwesomeIcon icon={faUsers} className="text-[#00d84f] text-5xl mb-3" />
             <h2 className="text-white text-2xl font-normal mb-2">24/7 Support</h2>
             <p className="text-zinc-400 font-medium text-sm">Call or chat with our support team anytime.</p>
           </div>

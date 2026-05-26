@@ -1,6 +1,14 @@
 
 'use client'
 
+import {
+  faGear,
+  faLeaf,
+  faCircleNodes,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const AboutSection: React.FC = () => {
@@ -66,7 +74,7 @@ const AboutSection: React.FC = () => {
           }}
         >
           {/* Mission */}
-          <div
+          {/* <div
             style={{
               border: "1px solid #1f2937",
               borderRadius: "16px",
@@ -74,15 +82,41 @@ const AboutSection: React.FC = () => {
               backgroundColor: "#0d0d0d",
             }}
           >
-            <IconBox type="mission" />
+            <FontAwesomeIcon icon={faGear} size="2xl" color="#22c55e" />
 
-            <h3 style={titleStyle}>Our Mission</h3>
+            <h3 style={titleStyle} className="mt-6">
+              Our Mission
+            </h3>
 
             <p style={descStyle}>
               To make electric mobility accessible and desirable for every Nepali through
               world-class EV motorcycles.
             </p>
-          </div>
+          </div> */}
+          <div
+  style={{
+    
+    border: "1px solid #1f2937",
+    borderRadius: "16px",
+    padding: "28px",
+    backgroundColor: "#0d0d0d",
+    boxShadow: "0 0 30px rgba(34,197,94,0.30)",
+    gap: "16px",
+  
+  }}
+ 
+>
+  <FontAwesomeIcon icon={faGear} size="2xl" color="#22c55e" />
+
+  <h3 style={titleStyle} className="mt-6">
+    Our Mission
+  </h3>
+
+  <p style={descStyle}>
+    To make electric mobility accessible and desirable for every Nepali through
+    world-class EV motorcycles.
+  </p>
+</div>
 
           {/* Vision */}
           <div
@@ -91,6 +125,7 @@ const AboutSection: React.FC = () => {
               borderRadius: "16px",
               padding: "28px",
               backgroundColor: "#0d0d0d",
+              boxShadow: "0 0 30px rgba(34,197,94,0.30)",
             }}
           >
             <IconBox type="vision" />
@@ -116,13 +151,7 @@ const AboutSection: React.FC = () => {
           }}
         >
           Our{" "}
-          <span
-            style={{
-              background: "linear-gradient(90deg, #22c55e, #16a34a)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
+          <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             Values
           </span>
         </h2>
@@ -134,9 +163,38 @@ const AboutSection: React.FC = () => {
             gap: "24px",
           }}
         >
-          <ValueCard title="Sustainability" desc="Building a greener Nepal." />
-          <ValueCard title="Innovation" desc="Pushing EV technology forward." />
-          <ValueCard title="Community" desc="Empowering Nepali riders." />
+          <ValueCard
+            icon={
+              <FontAwesomeIcon
+                icon={faLeaf}
+                className="text-[#00d84f] text-5xl mb-3"
+              />
+            }
+            title="Sustainability"
+            desc="Building a greener Nepal."
+          />
+
+          <ValueCard
+            icon={
+              <FontAwesomeIcon
+                icon={faCircleNodes}
+                className="text-[#00d84f] text-5xl mb-3"
+              />
+            }
+            title="Innovation"
+            desc="Pushing EV technology forward."
+          />
+
+          <ValueCard
+            icon={
+              <FontAwesomeIcon
+                icon={faUsers}
+                className="text-[#00d84f] text-5xl mb-3"
+              />
+            }
+            title="Community"
+            desc="Empowering Nepali riders."
+          />
         </div>
       </div>
     </section>
@@ -179,9 +237,20 @@ const IconBox = ({ type }: { type: "mission" | "vision" }) => {
 };
 
 /* VALUE CARD */
-const ValueCard = ({ title, desc }: { title: string; desc: string }) => {
+
+
+const ValueCard = ({
+  icon,
+  title,
+  desc,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}) => {
   return (
     <div
+      className="hover:border-green-500/40 hover:shadow-[0_0_30px_rgba(34,197,94,0.30)] transition-all duration-300 group"
       style={{
         border: "1px solid #1f2937",
         borderRadius: "16px",
@@ -190,16 +259,15 @@ const ValueCard = ({ title, desc }: { title: string; desc: string }) => {
         textAlign: "center",
       }}
     >
+      {icon}
+
       <h3 style={{ fontSize: "1.2rem", fontWeight: "600", marginBottom: "10px" }}>
         {title}
       </h3>
-      <p style={{ fontSize: "0.9rem", color: "#9ca3af" }}>{desc}</p>
+
+      <p style={{ fontSize: "0.9rem", color: "#9ca3af" }}>
+        {desc}
+      </p>
     </div>
   );
 };
-
-
-
-
-
-
