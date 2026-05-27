@@ -45,7 +45,7 @@ const VEHICLES: Vehicle[] = [
   },
 
    {
-    id: 'thunder-x',
+    id: 'thunder',
     name: 'Thunder X',
     tagline: 'Born to dominate.',
     range: '180km',
@@ -54,7 +54,7 @@ const VEHICLES: Vehicle[] = [
     image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXN8ZW58MHx8MHx8fDA%3D',
   },
   {
-    id: 'volt-cruiser',
+    id: 'cruiser',
     name: 'Volt Cruiser',
     tagline: 'Silent power, endless roads',
     range: '200km',
@@ -63,7 +63,7 @@ const VEHICLES: Vehicle[] = [
     image: 'https://images.unsplash.com/photo-1607091083645-31f4e28dc9af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWxlY3RyaWMlMjBtb3RvcmJpa2VzfGVufDB8fDB8fHww',
   },
   {
-    id: 'eco-ride',
+    id: 'ride',
     name: 'Eco Ride',
     tagline: 'Smart commute, zero emissions',
     range: '120km',
