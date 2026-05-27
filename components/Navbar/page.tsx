@@ -59,7 +59,7 @@ export default function Navbar() {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/electric', label: 'Our Bikes' },
-    { href: '/Technology', label: 'Technology' },
+    { href: '/technology', label: 'Technology' },
     { href: '/about-us', label: 'About Us' },
     { href: '/blog', label: 'Blog' },
     { href: '/Support', label: 'Support' },
