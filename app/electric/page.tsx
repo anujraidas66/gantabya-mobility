@@ -73,11 +73,6 @@ const VEHICLES: Vehicle[] = [
   },
 
 
-
-
-
-
-
 ]
 
 function VehicleCard({ vehicle, index }: { vehicle: Vehicle; index: number }) {
@@ -105,11 +100,18 @@ function VehicleCard({ vehicle, index }: { vehicle: Vehicle; index: number }) {
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-700"
         /> */}
-        <img
+        {/* <img
             src={vehicle.image}
             alt={vehicle.name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
+            /> */}
+            <Image
+  src={vehicle.image}
+  alt={vehicle.name}
+  width={800}
+  height={600}
+  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+/>
 
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-[#1a1a1a] to-transparent" />
       </div>
